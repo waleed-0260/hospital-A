@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
     }
 
     const from = message.from;
-
+    console.log("incoming message", message)
     console.log("Incoming message from:", from);
     console.log("Token length:", token.length);
     console.log("Phone Number ID:", phoneNumberId);
